@@ -8183,6 +8183,28 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/KidCe_switches.txt",
+      "hash": "7c1af425d50c02e366f6bf02f1f3be3b659d899dd104cf9c3269ded4268e92e3",
+      "title": "KidCe switches & rate profiles",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/multigp_pro_spec.txt",
       "hash": "a340e77d4555317ce3c14ecda94583abdf6b074a176a09cd9abfd24e7d0287e2",
       "title": "MultiGP PRO Spec 7\"",
