@@ -12,7 +12,7 @@ set vcd_video_system = HD
 set osd_displayport_device = MSP
 
 
-#$ OPTION_GROUP BEGIN: Select port for VTX
+#$ OPTION_GROUP BEGIN: Select UART for VTX
 
     #$ OPTION BEGIN (UNCHECKED): UART 1 
         serial 0 131073 115200 57600 0 115200
@@ -47,5 +47,83 @@ set osd_displayport_device = MSP
     #$ OPTION END
 
 #$ OPTION_GROUP END
+
+
+
+
+
+#$ OPTION_GROUP BEGIN: Select UART for Receiver
+
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial 0 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial 1 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial 2 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial 3 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial 4 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial 5 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial 6 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial 7 196609 115200 57600 0 115200
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+
+# 250hz default settings in case no-one selects a tuning option
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 6
+
+#$ OPTION_GROUP BEGIN: Fine-tuning...
+
+# sharp handling for racing:
+#$ OPTION BEGIN (UNCHECKED): Racing (25 of auto RC smoothing = 140hz RC smoothing)
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 4
+set feedforward_boost = 18
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+#$ OPTION END
+
+
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) ELRS Rx connection method (choose one):
+
+#$ OPTION BEGIN (UNCHECKED): Serial, separate Rx
+feature RX_SERIAL
+set serialrx_provider = CRSF
+#$ OPTION END
+
+
+#$ OPTION_GROUP END
+
+set report_cell_voltage = ON
+
+
+
 
 
