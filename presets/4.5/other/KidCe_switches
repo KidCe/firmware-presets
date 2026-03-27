@@ -1,0 +1,98 @@
+#$ TITLE: KidCe Switches and Rates
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OTHER
+#$ STATUS: Communnity
+#$ KEYWORDS: rates
+#$ AUTHOR: KidCe
+#$ DESCRIPTION: KidCe Switches and Rates
+
+
+
+
+# ================================
+# Betaflight CLI Preset: Switches & Rate Profiles
+# General-purpose template
+# ================================
+
+# -------------------------------
+# Reset to defaults (optional)
+# -------------------------------
+defaults nosave
+
+# -------------------------------
+# AUX switch assignments
+# -------------------------------
+# Format: aux <index> <type> <channel> <min> <max> <flags1> <flags2>
+# index = AUX channel number
+# type = function type (depends on your setup)
+# channel = RC channel assigned to this AUX
+# min/max = min and max signal range in microseconds
+# flags = internal options (usually leave 0)
+aux 0 0 0 1700 2100 0 0    # AUX channel 0
+aux 1 1 3 1700 2100 0 0    # AUX channel 1
+aux 2 35 2 1600 2100 0 0   # AUX channel 2
+
+# -------------------------------
+# Adjustment ranges (pots or knobs)
+# -------------------------------
+# Format: adjrange <index> <channel> <function> <min> <max> <step> <flags> <unused1> <unused2>
+# index = adjustment number
+# channel = RC channel linked to adjustment
+# function = mapped function
+# min/max = min/max signal in microseconds
+# step = increment step for adjustment
+# flags = additional options
+adjrange 0 0 1 900 2100 12 1 0 0   # Adjustment 0
+
+# -------------------------------
+# Rate profile definitions
+# -------------------------------
+# Format: rateprofile <index> followed by individual set commands
+# index = Rate profile number
+
+# --- Rate Profile 0 ---
+rateprofile 0
+set rateprofile_name = 670
+set roll_rc_rate = 17
+set pitch_rc_rate = 14
+set yaw_rc_rate = 14
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 50
+set roll_srate = 67
+set pitch_srate = 53
+set yaw_srate = 53
+
+# --- Rate Profile 1 ---
+rateprofile 1
+set rateprofile_name = brrrd
+set roll_rc_rate = 14
+set pitch_rc_rate = 14
+set yaw_rc_rate = 14
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 120
+set pitch_srate = 120
+set yaw_srate = 120
+
+# --- Rate Profile 2 ---
+rateprofile 2
+set rateprofile_name = bajo
+set roll_rc_rate = 25
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 45
+set pitch_expo = 50
+set yaw_expo = 62
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# --- Restore original rate profile selection ---
+rateprofile 0
+
+# ================================
+# End of CLI preset
+# ================================
