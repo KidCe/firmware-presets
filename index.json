@@ -168,6 +168,7 @@
       "Botgrinder",
       "CADDXFPV",
       "Chris Rosser",
+      "Community",
       "ctzsnooze",
       "ctzsnooze, SupaflyFPV",
       "Daniel Appel / Tehllama",
@@ -540,6 +541,7 @@
       "sbus",
       "SBUS fast",
       "secretfader",
+      "serial",
       "settek",
       "Sh*t pilot",
       "shames",
@@ -595,6 +597,7 @@
       "tx5m.1",
       "tx800",
       "tyrant",
+      "uart",
       "ul10",
       "ul5",
       "ul7",
@@ -8205,6 +8208,28 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/kidce_rx.txt",
+      "hash": "fbacb06e83901b5f163fb068b83470841be1c17bb4be0d4602c76f7879b512de",
+      "title": "KidCe ELRS 500hz + port select",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "uart",
+        "vtx",
+        "rx",
+        "osd",
+        "betaflight",
+        "serial"
+      ],
+      "author": "Community",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/KidCe_switches.txt",
       "hash": "c33f414bfcd08a8a4a50658b978f53c17f4ec68cecfb155ea5869ab92d490af9",
       "title": "KidCe switches & rate profiles",
@@ -8228,8 +8253,8 @@
     },
     {
       "fullPath": "presets/4.5/other/kidce_vtx_rx.txt",
-      "hash": "b12e168021b7827f943ac41da54a9ca1a299b7bdeec96f24550d07682786fbd5",
-      "title": "KidCe vtx rx",
+      "hash": "6609da7c51dba1726e964a2f88f2622d201e60639e37fefad4cc9e94dcb2ebd9",
+      "title": "VTX & RX UART Selection",
       "firmware_version": [
         "4.4",
         "4.5",
@@ -8238,14 +8263,14 @@
       "category": "OSD",
       "status": "COMMUNITY",
       "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
+        "uart",
+        "vtx",
+        "rx",
+        "osd",
+        "betaflight",
+        "serial"
       ],
-      "author": "KidCe",
+      "author": "Community",
       "priority": 0
     },
     {

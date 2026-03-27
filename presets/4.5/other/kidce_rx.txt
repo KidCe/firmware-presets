@@ -1,0 +1,72 @@
+#$ TITLE: KidCe ELRS 500hz + port select
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: uart, vtx, rx, osd, betaflight, serial
+#$ AUTHOR: Community
+
+
+#$ OPTION_GROUP BEGIN: Select UART for Receiver
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        # Use UART1 for RX
+        serial 0 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        # Use UART2 for RX
+        serial 1 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial 2 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial 3 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial 4 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial 5 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial 6 196609 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial 7 196609 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+# ELRS RX connection method (exclusive, choose one)
+#$ OPTION_GROUP BEGIN: ELRS Rx method
+    #$ OPTION BEGIN (UNCHECKED): Serial, separate RX
+feature RX_SERIAL
+set serialrx_provider = CRSF
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+# Default tuning values
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 6
+
+# Optional fine-tuning for racing
+#$ OPTION_GROUP BEGIN: Racing fine-tuning
+    #$ OPTION BEGIN (UNCHECKED): Racing (sharper RC handling)
+set feedforward_smooth_factor = 35
+set feedforward_jitter_factor = 4
+set feedforward_boost = 18
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+# Enable reporting of cell voltage
+set report_cell_voltage = ON
