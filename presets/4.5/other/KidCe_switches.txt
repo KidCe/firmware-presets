@@ -26,6 +26,7 @@
 # channel = RC channel assigned to this AUX
 # min/max = min and max signal range in microseconds
 # flags = internal options (usually leave 0)
+
 aux 0 0 0 1700 2100 0 0    # AUX channel 0
 aux 1 1 3 1700 2100 0 0    # AUX channel 1
 aux 2 35 2 1600 2100 0 0   # AUX channel 2
@@ -40,6 +41,7 @@ aux 2 35 2 1600 2100 0 0   # AUX channel 2
 # min/max = min/max signal in microseconds
 # step = increment step for adjustment
 # flags = additional options
+
 adjrange 0 0 1 900 2100 12 1 0 0   # Adjustment 0
 
 # -------------------------------
@@ -49,6 +51,7 @@ adjrange 0 0 1 900 2100 12 1 0 0   # Adjustment 0
 # index = Rate profile number
 
 # --- Rate Profile 0 ---
+
 rateprofile 0
 set rateprofile_name = 670
 set roll_rc_rate = 17
@@ -62,6 +65,7 @@ set pitch_srate = 53
 set yaw_srate = 53
 
 # --- Rate Profile 1 ---
+
 rateprofile 1
 set rateprofile_name = brrrd
 set roll_rc_rate = 14
@@ -75,6 +79,7 @@ set pitch_srate = 120
 set yaw_srate = 120
 
 # --- Rate Profile 2 ---
+
 rateprofile 2
 set rateprofile_name = bajo
 set roll_rc_rate = 25
