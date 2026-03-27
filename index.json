@@ -8208,6 +8208,28 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/KidCe_LED_setup.txt",
+      "hash": "a3aa3ba3d5ba4825bc6556e6833baff6addbcb819eb9885f6d296faf50adeb73",
+      "title": "KidCe LED Setup",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "LEDS",
+      "status": "OFFICIAL",
+      "keywords": [
+        "leds",
+        "race",
+        "vtx",
+        "colour change",
+        "sugarK",
+        "spec",
+        "spec racing",
+        "tinytrainer"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/kidce_rx.txt",
       "hash": "71eeea2ad2771de81846ef80723135ac72f380b29b50d5e690c9b4785871eb01",
       "title": "KidCe ELRS 250hz + port select",
@@ -8272,28 +8294,6 @@
         "serial"
       ],
       "author": "Community",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/LED VTX  race mode.txt",
-      "hash": "8e6d4395d42122a821842f5bc0c1de808ac2d5743e9bfbbdfac1adf2d4552b77",
-      "title": "RACE mode LED settings",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "LEDS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "leds",
-        "race",
-        "vtx",
-        "colour change",
-        "sugarK",
-        "spec",
-        "spec racing",
-        "tinytrainer"
-      ],
-      "author": "sugarK",
       "priority": 0
     },
     {
