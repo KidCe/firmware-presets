@@ -190,6 +190,7 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
+      "KidCe",
       "KMfpv",
       "LeadFingers",
       "MinChan Kim",
@@ -433,6 +434,7 @@
       "JWebb",
       "karate",
       "KarateBrot",
+      "kidce",
       "kim",
       "launch",
       "launch_mode",
@@ -7991,6 +7993,28 @@
       ],
       "author": "Volker Göschl-Covrljan",
       "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/kidce/KidCe_hdzero_osd.txt",
+      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
+      "title": "KidCe HD Race OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/leds/LED VTX  race mode.txt",
