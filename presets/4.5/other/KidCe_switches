@@ -1,11 +1,11 @@
-#$ TITLE: KidCe Switches and Rates
+#$ TITLE: KidCe HD Race OSD
+#$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
-#$ CATEGORY: OTHER
-#$ STATUS: Communnity
-#$ KEYWORDS: rates
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:hdzero, HD, HDOSD, OSD, kidce, racing
 #$ AUTHOR: KidCe
-#$ DESCRIPTION: KidCe Switches and Rates
 
 
 
