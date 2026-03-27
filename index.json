@@ -8165,7 +8165,7 @@
     },
     {
       "fullPath": "presets/4.5/other/KidCe_hdzero_osd.txt",
-      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
+      "hash": "4dca36ceca306934bb28ca27c192f6fe547806377baad3a41f97037775c7612e",
       "title": "KidCe HD Race OSD",
       "firmware_version": [
         "4.4",
@@ -8209,7 +8209,7 @@
     },
     {
       "fullPath": "presets/4.5/other/KidCe_LED_setup.txt",
-      "hash": "2fb83e2b4eed79e8598e77e0ae25ad9a6c5b4a26ecdc3118ac8f87ebd276903a",
+      "hash": "c79d63952259e1d02364e14420dd4871745e605393b39de01113667d3283a760",
       "title": "KidCe LED Setup",
       "firmware_version": [
         "4.5"

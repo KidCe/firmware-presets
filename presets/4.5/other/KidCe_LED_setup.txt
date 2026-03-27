@@ -26,7 +26,7 @@ set ledstrip_rainbow_freq = 75
 
 #$ OPTION_GROUP BEGIN: Set Brightness
     
-    #$ OPTION BEGIN (CHECKED): Set 100% (DEFAULT)
+    #$ OPTION BEGIN (UNCHECKED): Set 100% (DEFAULT)
         set ledstrip_brightness = 100
     #$ OPTION END
 

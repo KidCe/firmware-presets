@@ -26,14 +26,16 @@
 
 #$ INCLUDE: presets/4.4/osd/defaults.txt
 
+
 set osd_warn_bitmask = 24319
+set osd_link_quality_alarm = 85
 set osd_rssi_dbm_alarm = -98
 set osd_tim1 = 784
 set osd_tim2 = 785
 set osd_link_quality_pos = 3628
 set osd_tim_2_pos = 2592
-set osd_throttle_pos = 3404
-set osd_current_pos = 3595
+set osd_throttle_pos = 3373
+set osd_current_pos = 1547
 set osd_craft_name_pos = 459
 set osd_pilot_name_pos = 2614
 set osd_altitude_pos = 352
@@ -41,6 +43,10 @@ set osd_warnings_pos = 14707
 set osd_avg_cell_voltage_pos = 3436
 set osd_esc_tmp_pos = 472
 set osd_esc_rpm_pos = 384
-set osd_rate_profile_name_pos = 1035
+set osd_rate_profile_name_pos = 2049
 set osd_pid_profile_name_pos = 2048
+set osd_spec_logo_pos = 14368
 set osd_stat_bitmask = 1879787044
+set osd_menu_background = TRANSPARENT
+set osd_canvas_width = 50
+set osd_canvas_height = 18
