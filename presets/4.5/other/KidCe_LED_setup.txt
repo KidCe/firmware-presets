@@ -12,7 +12,7 @@
 
 #--- Set up Race mode ---
 
-set ledstrip_profile = RACE
+#set ledstrip_profile = RACE
 set ledstrip_race_color = BLACK
 
 
@@ -29,8 +29,21 @@ set ledstrip_rainbow_freq = 75
         set ledstrip_brightness = 100
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Set 50%
-        set ledstrip_brightness = 50
+    #$ OPTION BEGIN (UNCHECKED): Set 40%
+        set ledstrip_brightness = 40
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Set Profile
+    
+    #$ OPTION BEGIN (CHECKED): RACE
+        set ledstrip_profile = RACE
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): STATUS
+        set ledstrip_profile = STATUS
     #$ OPTION END
 
 #$ OPTION_GROUP END
