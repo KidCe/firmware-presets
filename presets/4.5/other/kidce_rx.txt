@@ -1,11 +1,11 @@
-#$ TITLE: KidCe ELRS 500hz + port select
+#$ TITLE: KidCe ELRS 250hz + port select
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
-#$ CATEGORY: OSD
+#$ CATEGORY: other
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: uart, vtx, rx, osd, betaflight, serial
-#$ AUTHOR: Community
+#$ KEYWORDS: uart, vtx, rx, osd, betaflight, serial, kidce
+#$ AUTHOR: KidCe
 
 
 #$ OPTION_GROUP BEGIN: Select UART for Receiver

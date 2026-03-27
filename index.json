@@ -8209,14 +8209,14 @@
     },
     {
       "fullPath": "presets/4.5/other/kidce_rx.txt",
-      "hash": "bd4996b21a99fb2af314d1ef94f72ca893535ed6f3d81a8b8e64f95d3d14a4fd",
-      "title": "KidCe ELRS 500hz + port select",
+      "hash": "71eeea2ad2771de81846ef80723135ac72f380b29b50d5e690c9b4785871eb01",
+      "title": "KidCe ELRS 250hz + port select",
       "firmware_version": [
         "4.4",
         "4.5",
         "2025.12"
       ],
-      "category": "OSD",
+      "category": "OTHER",
       "status": "COMMUNITY",
       "keywords": [
         "uart",
@@ -8224,9 +8224,10 @@
         "rx",
         "osd",
         "betaflight",
-        "serial"
+        "serial",
+        "kidce"
       ],
-      "author": "Community",
+      "author": "KidCe",
       "priority": 0
     },
     {
@@ -8271,6 +8272,28 @@
         "serial"
       ],
       "author": "Community",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/LED VTX  race mode.txt",
+      "hash": "8e6d4395d42122a821842f5bc0c1de808ac2d5743e9bfbbdfac1adf2d4552b77",
+      "title": "RACE mode LED settings",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "LEDS",
+      "status": "OFFICIAL",
+      "keywords": [
+        "leds",
+        "race",
+        "vtx",
+        "colour change",
+        "sugarK",
+        "spec",
+        "spec racing",
+        "tinytrainer"
+      ],
+      "author": "sugarK",
       "priority": 0
     },
     {
