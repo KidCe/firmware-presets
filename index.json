@@ -7995,28 +7995,6 @@
       "priority": 100
     },
     {
-      "fullPath": "presets/4.5/kidce/KidCe_hdzero_osd.txt",
-      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
-      "title": "KidCe HD Race OSD",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/leds/LED VTX  race mode.txt",
       "hash": "9f7ff587ab9bb60c8902dfdd14a4b3477cf3d3605a3eccdc771ed8bfd4a1ebee",
       "title": "RACE mode LED settings",
@@ -8102,6 +8080,28 @@
         "Racing"
       ],
       "author": "JazzMutant",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/osd/KidCe_hdzero_osd.txt",
+      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
+      "title": "KidCe HD Race OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
       "priority": 0
     },
     {
