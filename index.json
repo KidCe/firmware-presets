@@ -8083,28 +8083,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/osd/KidCe_hdzero_osd.txt",
-      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
-      "title": "KidCe HD Race OSD",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/osd/sugark_hdzero_osd.txt",
       "hash": "d3f43e0baad7d2b2331b71b76029b2576f0f73520ac72060f4ec281153a1e8fa",
       "title": "sugarK HDzero OSD",
@@ -8183,9 +8161,75 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/KidCe_hdzero_osd.txt",
+      "hash": "4badb646bb0bf206f00986e1c9cff8238e83246fd0c0a54dcb0ae57ba74ac036",
+      "title": "KidCe HD Race OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/KidCe_IncludeAll.txt",
+      "hash": "cb4929b99b1a4a8ce3e1c8283b94c0981bf15c1757a07c86cb5a5f67a582ec15",
+      "title": "KidCe AIO",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/KidCe_switches.txt",
       "hash": "c33f414bfcd08a8a4a50658b978f53c17f4ec68cecfb155ea5869ab92d490af9",
       "title": "KidCe switches & rate profiles",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "kidce",
+        "racing"
+      ],
+      "author": "KidCe",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/kidce_vtx_rx.txt",
+      "hash": "c4a98f4ede354fc866f78cad84c7d0744104d6167d0bb692d69e3661c8e579c2",
+      "title": "KidCe vtx rx",
       "firmware_version": [
         "4.4",
         "4.5",
