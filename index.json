@@ -316,6 +316,7 @@
       "bardwell",
       "basher",
       "basic",
+      "beeper",
       "beginner",
       "betaflight",
       "betafpv",
@@ -391,6 +392,7 @@
       "filtering",
       "filters",
       "five33",
+      "flip over after crash",
       "Foxeer",
       "fport",
       "fpv.wtf",
@@ -504,7 +506,6 @@
       "PIDtoolbox",
       "pro32",
       "profile",
-      "profiles",
       "Protos",
       "Pure Race",
       "quaddiction",
@@ -519,6 +520,7 @@
       "Racing",
       "rad",
       "ranging",
+      "rate profiles",
       "rates",
       "RC",
       "rc link",
@@ -9874,7 +9876,7 @@
     },
     {
       "fullPath": "presets/kidce/KidCe_Hdzero_Bundle.txt",
-      "hash": "55660bca2c4b074f7318c0e611d50453fb0bd79ba3d1fcc4daeb03957e155349",
+      "hash": "15809f61e5e503f4752acc67f73bc2851bfbe3a9b4becf44e3e37d3e960c2bef",
       "title": "KidCe HDZero OSD and Controls Bundle",
       "firmware_version": [
         "4.4",
@@ -9962,32 +9964,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/kidce/KidCe_Switches_and_Adjustments.txt",
-      "hash": "d79e1e038b5ccbcb380381857a049b8fd5bbb8a9729759b0274eb035885992be",
-      "title": "KidCe Switches and Adjustment Range",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12",
-        "2026.6"
-      ],
-      "category": "MODES",
-      "status": "COMMUNITY",
-      "keywords": [
-        "kidce",
-        "aux",
-        "switches",
-        "modes",
-        "adjustment range",
-        "tinywhoop"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/kidce/KidCe_TinyWhoop_Rates.txt",
-      "hash": "2f31244af28ae35e7c82bf3014ad9ef7c9843f0c48932f32a9951efed664ceb8",
-      "title": "KidCe TinyWhoop Rates",
+      "fullPath": "presets/kidce/KidCe_Switches_Rates_and_Adjustment_Range.txt",
+      "hash": "187e68fed486b4409d7ae47d6ac7876283fa59f06abc31ecd091a7a160b5ace8",
+      "title": "KidCe Switches, Rates and Adjustment Range",
       "firmware_version": [
         "4.4",
         "4.5",
@@ -9999,15 +9978,20 @@
       "keywords": [
         "kidce",
         "rates",
-        "tinywhoop",
-        "profiles"
+        "rate profiles",
+        "switches",
+        "aux",
+        "modes",
+        "adjustment range",
+        "beeper",
+        "flip over after crash"
       ],
       "author": "KidCe",
       "priority": 10000
     },
     {
       "fullPath": "presets/kidce/KidCe_TinyWhoop_Settings.txt",
-      "hash": "26c967cdc7b03884cb130fe212f7c61969e53c3ab71cd5a530635d179565ae88",
+      "hash": "f9c108be66bbba093825bc6a3811771afffb14f82d12accd1c33c98086a65406",
       "title": "KidCe TinyWhoop Flight Setup (No OSD, PID, or Filters)",
       "firmware_version": [
         "4.4",

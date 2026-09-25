@@ -7,10 +7,9 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: kidce, tinywhoop, whoop, rates, leds, switches, telemetry
 #$ AUTHOR: KidCe
-#$ DESCRIPTION: Combines KidCe's switch and rate presets with the saved TinyWhoop LED layout, beeper settings, and battery voltage alerts. Does not alter OSD, PID, filters, board calibration, motor or ESC setup, or VTX configuration.
+#$ DESCRIPTION: Combines KidCe's common switches, rates, and adjustment range preset with the saved TinyWhoop LED layout, beeper settings, and battery voltage alerts. Does not alter OSD, PID, filters, board calibration, motor or ESC setup, or VTX configuration.
 #$ WARNING: AUX switch assignments and the 13 LED positions are hardware- and receiver-dependent. Verify them before saving. FC telemetry output is enabled, but the receiver protocol and UART routing must support telemetry.
-#$ INCLUDE: presets/kidce/KidCe_Switches_and_Adjustments.txt
-#$ INCLUDE: presets/kidce/KidCe_TinyWhoop_Rates.txt
+#$ INCLUDE: presets/kidce/KidCe_Switches_Rates_and_Adjustment_Range.txt
 
 feature TELEMETRY
 feature LED_STRIP

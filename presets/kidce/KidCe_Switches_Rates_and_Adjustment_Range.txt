@@ -1,15 +1,31 @@
-#$ TITLE: KidCe TinyWhoop Rates
+#$ TITLE: KidCe Switches, Rates and Adjustment Range
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kidce, rates, tinywhoop, profiles
+#$ KEYWORDS: kidce, rates, rate profiles, switches, aux, modes, adjustment range, beeper, flip over after crash
 #$ AUTHOR: KidCe
-#$ DESCRIPTION: Applies the three rate profiles saved from the AIR65 C backup. Enables FC telemetry output; receiver protocol and UART routing must be configured separately where needed.
+#$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, three rate profiles, and pilot name. Intended as the common control setup across craft, including TinyWhoops. Enables FC telemetry output; receiver protocol and UART routing must support it.
+#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100.
 
 feature TELEMETRY
+
+# AUX mode assignments
+# ARM: AUX1
+aux 0 0 0 1700 2100 0 0
+# ANGLE: AUX4
+aux 1 1 3 1700 2100 0 0
+# Flip Over After Crash: AUX3 (single range)
+aux 2 35 2 1600 2100 0 0
+# Beeper: AUX6, active above 1600
+aux 3 13 5 1600 2000 0 0
+
+# Adjustment range
+adjrange 0 0 1 900 2100 12 1 0 0
+
+set pilot_name = KIDCE
 
 # Rate profile 0
 rateprofile 0
