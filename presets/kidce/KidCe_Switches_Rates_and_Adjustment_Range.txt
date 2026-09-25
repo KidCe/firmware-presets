@@ -8,7 +8,7 @@
 #$ KEYWORDS: kidce, rates, rate profiles, switches, aux, modes, adjustment range, beeper, flip over after crash
 #$ AUTHOR: KidCe
 #$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, and three Actual-rate profiles in order: Race (profile 0), Freestyle (profile 1), and Cinematic (profile 2), plus pilot name. Intended as the common control setup across craft. Enables FC telemetry output; receiver protocol and UART routing must support it.
-#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100. Betaflight profile names allow up to 8 characters, so Freestyle is stored as FRSTL and Cinematic as Cinemati.
+#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to the maximum 2100; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100. Betaflight profile names allow up to 8 characters, so Freestyle is stored as FRSTL and Cinematic as Cinemati.
 
 feature TELEMETRY
 
@@ -20,7 +20,7 @@ aux 1 1 3 1700 2100 0 0
 # Flip Over After Crash: AUX3 (single range)
 aux 2 35 2 1600 2100 0 0
 # Beeper: AUX6, active above 1600
-aux 3 13 5 1600 2000 0 0
+aux 3 13 5 1600 2100 0 0
 
 # Adjustment range
 adjrange 0 0 1 900 2100 12 1 0 0
