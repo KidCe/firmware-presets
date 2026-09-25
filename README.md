@@ -2,6 +2,10 @@
 
 A simple way to configure your Betaflight Flight Controller Firmware settings.
 
+## AI assistance disclosure
+
+This repository includes personal presets created with substantial assistance from OpenAI Codex. The maintainer directed the work and is responsible for reviewing and using the presets.
+
 - [Introduction](#introduction)
 - [Applying and using Presets](#applying-and-using-presets)
 - [Providing feedback](#providing-feedback)
@@ -312,4 +316,3 @@ Note 2: If an included Preset has options, those options will not be shown to th
 ## Credits
 
 The Preset system was developed by @limonspb for Betaflight 4.3.
-
