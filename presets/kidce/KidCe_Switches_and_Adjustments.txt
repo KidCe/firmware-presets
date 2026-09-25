@@ -1,13 +1,13 @@
-#$ TITLE: Kitsi Switches and Adjustment Range
+#$ TITLE: KidCe Switches and Adjustment Range
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: MODES
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, aux, switches, modes, adjustment range, tinywhoop
-#$ AUTHOR: Kitsi
-#$ DESCRIPTION: Applies Kitsi's saved AUX mode assignments and adjustment range, plus the pilot name. Confirm AUX channel mapping and switch positions for the receiver before saving. Enables FC telemetry output; the receiver protocol and UART routing must also support it.
+#$ KEYWORDS: kidce, aux, switches, modes, adjustment range, tinywhoop
+#$ AUTHOR: KidCe
+#$ DESCRIPTION: Applies KidCe's saved AUX mode assignments and adjustment range, plus the pilot name. Confirm AUX channel mapping and switch positions for the receiver before saving. Enables FC telemetry output; the receiver protocol and UART routing must also support it.
 #$ WARNING: AUX channel assignments vary by transmitter model and channel order. Verify every mode in the Modes tab before flight.
 
 feature TELEMETRY

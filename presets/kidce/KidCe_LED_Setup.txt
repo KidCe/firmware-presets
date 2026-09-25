@@ -1,11 +1,11 @@
-#$ TITLE: Kitsi LED Setup for HDZero Race VTX
+#$ TITLE: KidCe LED Setup for HDZero Race VTX
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: LEDS
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, leds, led strip, hdzero, race, vtx, tinytrainer
-#$ AUTHOR: sugarK, adapted by Kitsi
+#$ KEYWORDS: kidce, leds, led strip, hdzero, race, vtx, tinytrainer
+#$ AUTHOR: sugarK, adapted by KidCe
 #$ DESCRIPTION: Configures LED colors for HDZero Race VTX channel changes (HDZero VTX 1.30+; Betaflight implementation: https://github.com/betaflight/betaflight/pull/13096) and provides mutually exclusive choices for brightness, LED profile, and physical LED count up to the Betaflight 32-LED limit.
 #$ WARNING: Requires LED_STRIP support and compatible HDZero VTX firmware (1.30 or later) for channel-linked colors. Choose exactly one profile and one LED-count option; confirm the selected LED count matches the craft. Betaflight uses at most 32 LEDs.
 

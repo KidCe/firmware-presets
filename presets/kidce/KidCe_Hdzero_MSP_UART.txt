@@ -1,12 +1,12 @@
-#$ TITLE: Kitsi HDZero MSP DisplayPort and UART
+#$ TITLE: KidCe HDZero MSP DisplayPort and UART
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, hdzero, msp, displayport, vtx, uart
-#$ AUTHOR: Kitsi
+#$ KEYWORDS: kidce, hdzero, msp, displayport, vtx, uart
+#$ AUTHOR: KidCe
 #$ DESCRIPTION: Enables HD video-system and MSP DisplayPort settings, then lets you choose one UART for HDZero VTX control. FC telemetry output is enabled; choose a receiver protocol and UART that support it separately.
 #$ WARNING: Select exactly one UART that is physically connected to the HDZero VTX. Check Ports tab and do not assign the same UART to another function.
 

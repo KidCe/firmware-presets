@@ -1,16 +1,16 @@
-#$ TITLE: Kitsi TinyWhoop Flight Setup (No OSD, PID, or Filters)
+#$ TITLE: KidCe TinyWhoop Flight Setup (No OSD, PID, or Filters)
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, tinywhoop, whoop, rates, leds, switches, telemetry
-#$ AUTHOR: Kitsi
-#$ DESCRIPTION: Combines Kitsi's switch and rate presets with the saved TinyWhoop LED layout, beeper settings, and battery voltage alerts. Does not alter OSD, PID, filters, board calibration, motor or ESC setup, or VTX configuration.
+#$ KEYWORDS: kidce, tinywhoop, whoop, rates, leds, switches, telemetry
+#$ AUTHOR: KidCe
+#$ DESCRIPTION: Combines KidCe's switch and rate presets with the saved TinyWhoop LED layout, beeper settings, and battery voltage alerts. Does not alter OSD, PID, filters, board calibration, motor or ESC setup, or VTX configuration.
 #$ WARNING: AUX switch assignments and the 13 LED positions are hardware- and receiver-dependent. Verify them before saving. FC telemetry output is enabled, but the receiver protocol and UART routing must support telemetry.
-#$ INCLUDE: presets/kitsi/Kitsi_Switches_and_Adjustments.txt
-#$ INCLUDE: presets/kitsi/Kitsi_TinyWhoop_Rates.txt
+#$ INCLUDE: presets/kidce/KidCe_Switches_and_Adjustments.txt
+#$ INCLUDE: presets/kidce/KidCe_TinyWhoop_Rates.txt
 
 feature TELEMETRY
 feature LED_STRIP

@@ -10,7 +10,7 @@ This repository includes personal presets created with substantial assistance fr
 - [Applying and using Presets](#applying-and-using-presets)
 - [Providing feedback](#providing-feedback)
 - [Custom sources](#custom-sources)
-- [Kitsi personal presets](#kitsi-personal-presets)
+- [KidCe personal presets](#kidce-personal-presets)
 - [Creating new presets](#creating-new-presets)
 - [Tips for preset authors](#tips-for-authors)
 - [Modifying existing presets](#modifying-existing-presets)
@@ -68,11 +68,11 @@ Unless you rebase to master to ensure that this branch is up to date with Betafl
 
 You may choose to remove all the other Presets, leaving only those you have made, and you may replace or remove the directory structure.  You must re-build the index file and push it to Github after file or directory changes.  
 
-## Kitsi personal presets
+## KidCe personal presets
 
-Kitsi's personal presets are stored together in [`presets/kitsi/`](presets/kitsi/). Their metadata controls the Configurator category and firmware-version visibility. Read [`AGENTS.md`](AGENTS.md) before adding or changing one, then run `npm run verify` and `npm run index` and commit the updated `index.json` and `index_hash.txt` with the preset files.
+KidCe's personal presets are stored together in [`presets/kidce/`](presets/kidce/). Their metadata controls the Configurator category and firmware-version visibility. Read [`AGENTS.md`](AGENTS.md) before adding or changing one, then run `npm run verify` and `npm run index` and commit the updated `index.json` and `index_hash.txt` with the preset files.
 
-The telemetry feature is enabled by every Kitsi preset. Receiver protocol, UART routing, and receiver support still vary by craft; follow the warning shown on each preset and verify the Receiver and Ports tabs before saving.
+The telemetry feature is enabled by every KidCe preset. Receiver protocol, UART routing, and receiver support still vary by craft; follow the warning shown on each preset and verify the Receiver and Ports tabs before saving.
 
 ## Creating new presets
 

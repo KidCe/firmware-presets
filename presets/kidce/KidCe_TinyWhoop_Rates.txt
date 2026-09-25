@@ -1,12 +1,12 @@
-#$ TITLE: Kitsi TinyWhoop Rates
+#$ TITLE: KidCe TinyWhoop Rates
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RATES
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, rates, tinywhoop, profiles
-#$ AUTHOR: Kitsi
+#$ KEYWORDS: kidce, rates, tinywhoop, profiles
+#$ AUTHOR: KidCe
 #$ DESCRIPTION: Applies the three rate profiles saved from the AIR65 C backup. Enables FC telemetry output; receiver protocol and UART routing must be configured separately where needed.
 
 feature TELEMETRY

@@ -1,0 +1,15 @@
+#$ TITLE: KidCe HDZero OSD and Controls Bundle
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: kidce, hdzero, osd, rates, switches, bundle
+#$ AUTHOR: KidCe
+#$ DESCRIPTION: Combines KidCe switch assignments, TinyWhoop rates, and the HDZero Race OSD. Apply the HDZero MSP/UART preset separately and choose the UART connected to your VTX.
+#$ WARNING: Includes do not expose options from included presets. This bundle intentionally contains only presets without selectable options; UART mapping remains a separate step. It resets OSD values to Betaflight 4.4 defaults before applying the HDZero layout.
+#$ INCLUDE: presets/kidce/KidCe_Switches_and_Adjustments.txt
+#$ INCLUDE: presets/kidce/KidCe_TinyWhoop_Rates.txt
+#$ INCLUDE: presets/kidce/KidCe_Hdzero_Race_OSD.txt
+
+feature TELEMETRY

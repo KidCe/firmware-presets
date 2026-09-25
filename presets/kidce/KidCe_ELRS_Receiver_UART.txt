@@ -1,12 +1,12 @@
-#$ TITLE: Kitsi ELRS Serial Receiver and UART
+#$ TITLE: KidCe ELRS Serial Receiver and UART
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: RC_LINK
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, elrs, crsf, serial receiver, uart, telemetry
-#$ AUTHOR: Kitsi
+#$ KEYWORDS: kidce, elrs, crsf, serial receiver, uart, telemetry
+#$ AUTHOR: KidCe
 #$ DESCRIPTION: Configures a separate serial ELRS/CRSF receiver, enables FC telemetry output, and lets you select one receiver UART. Optional RC smoothing profiles and cell-voltage telemetry are provided below.
 #$ WARNING: For a separate serial receiver, not an SPI-integrated ELRS receiver. Select exactly the UART wired to the receiver's TX/RX pads. UART availability and wiring are flight-controller-specific; verify the Ports and Receiver tabs after applying.
 

@@ -1,12 +1,12 @@
-#$ TITLE: Kitsi Analog OSD
+#$ TITLE: KidCe Analog OSD
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
 #$ FIRMWARE_VERSION: 2026.6
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: kitsi, analog, osd, max7456, whoop
-#$ AUTHOR: Kitsi
+#$ KEYWORDS: kidce, analog, osd, max7456, whoop
+#$ AUTHOR: KidCe
 #$ DESCRIPTION: Applies the analog MAX7456 OSD layout, NTSC video system, and pilot name. Enables FC telemetry output; the receiver protocol and required UART routing must also be configured on the craft.
 #$ WARNING: Intended for analog MAX7456 video systems. Do not apply to an HDZero MSP OSD setup.
 
