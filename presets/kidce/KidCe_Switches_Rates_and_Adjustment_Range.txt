@@ -7,8 +7,8 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: kidce, rates, rate profiles, switches, aux, modes, adjustment range, beeper, flip over after crash
 #$ AUTHOR: KidCe
-#$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, the Cinematic, Freestyle, and Race Actual-rate profiles, and pilot name. Intended as the common control setup across craft. Enables FC telemetry output; receiver protocol and UART routing must support it.
-#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100. Betaflight profile names allow up to 8 characters, so Cinematic is stored as Cinemati.
+#$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, and three Actual-rate profiles in order: Race (profile 0), Freestyle (profile 1), and Cinematic (profile 2), plus pilot name. Intended as the common control setup across craft. Enables FC telemetry output; receiver protocol and UART routing must support it.
+#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100. Betaflight profile names allow up to 8 characters, so Freestyle is stored as FRSTL and Cinematic as Cinemati.
 
 feature TELEMETRY
 
@@ -27,44 +27,8 @@ adjrange 0 0 1 900 2100 12 1 0 0
 
 set pilot_name = KIDCE
 
-# Rate profile 0: Cinematic (Betaflight allows up to 8 characters in the profile name)
+# Rate profile 0: Race
 rateprofile 0
-set rateprofile_name = Cinemati
-set rates_type = ACTUAL
-set thr_mid = 50
-set thr_expo = 0
-set throttle_limit_type = OFF
-set throttle_limit_percent = 100
-set roll_rc_rate = 5
-set pitch_rc_rate = 5
-set yaw_rc_rate = 5
-set roll_expo = 30
-set pitch_expo = 30
-set yaw_expo = 30
-set roll_srate = 50
-set pitch_srate = 40
-set yaw_srate = 35
-
-# Rate profile 1: Freestyle
-rateprofile 1
-set rateprofile_name = Freestyle
-set rates_type = ACTUAL
-set thr_mid = 50
-set thr_expo = 0
-set throttle_limit_type = OFF
-set throttle_limit_percent = 100
-set roll_rc_rate = 17
-set pitch_rc_rate = 14
-set yaw_rc_rate = 14
-set roll_expo = 57
-set pitch_expo = 57
-set yaw_expo = 20
-set roll_srate = 92
-set pitch_srate = 92
-set yaw_srate = 67
-
-# Rate profile 2: Race
-rateprofile 2
 set rateprofile_name = Race
 set rates_type = ACTUAL
 set thr_mid = 50
@@ -80,4 +44,40 @@ set yaw_expo = 15
 set roll_srate = 67
 set pitch_srate = 53
 set yaw_srate = 33
+
+# Rate profile 1: Freestyle (shortened because Betaflight profile names allow up to 8 characters)
+rateprofile 1
+set rateprofile_name = FRSTL
+set rates_type = ACTUAL
+set thr_mid = 50
+set thr_expo = 0
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rc_rate = 17
+set pitch_rc_rate = 14
+set yaw_rc_rate = 14
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 20
+set roll_srate = 92
+set pitch_srate = 92
+set yaw_srate = 67
+
+# Rate profile 2: Cinematic (shortened because Betaflight profile names allow up to 8 characters)
+rateprofile 2
+set rateprofile_name = Cinemati
+set rates_type = ACTUAL
+set thr_mid = 50
+set thr_expo = 0
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 5
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 50
+set pitch_srate = 40
+set yaw_srate = 35
 rateprofile 0
