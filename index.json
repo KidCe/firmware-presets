@@ -596,6 +596,7 @@
       "TinyApe",
       "TinyTrainer",
       "tinywhoop",
+      "toolbox",
       "toothpic",
       "toothpick",
       "Tracer",
@@ -9961,6 +9962,34 @@
         "tinytrainer"
       ],
       "author": "sugarK, adapted by KidCe",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kidce/KidCe_Preset_Toolbox.txt",
+      "hash": "c40b97e3f5a0727992aa263090c90640f8fbbae184727865c52642ac680a7b68",
+      "title": "KidCe Preset Toolbox",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kidce",
+        "toolbox",
+        "modes",
+        "rates",
+        "osd",
+        "analog",
+        "hdzero",
+        "elrs",
+        "uart",
+        "leds",
+        "tinywhoop"
+      ],
+      "author": "KidCe",
       "priority": 0
     },
     {

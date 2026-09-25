@@ -18,6 +18,9 @@ These rules apply to personal presets in `presets/kidce/`. Treat the other prese
 - Use an `(EXCLUSIVE)` option group whenever the user must choose exactly one UART, protocol, LED count, or other conflicting hardware option. Give each option a distinct, accurate label.
 - A preset included by another preset does not expose the included preset's option checkboxes. Keep option-bearing presets separate, or repeat their choices in the parent preset.
 - Keep presets focused. Leave board identity, calibration, PID, filters, motor setup, and VTX tables out unless the title and warning clearly identify the matching craft or hardware.
+- Keep presets/kidce/KidCe_Preset_Toolbox.txt synchronized with personal presets. It is the favorite-friendly parent entry; expose each module as an unchecked option and use exclusive groups for conflicting OSD layouts, UART choices, and LED layouts.
+- Do not include option-bearing presets from the toolbox because their inner checkboxes will not be exposed. Inline and maintain those options in the toolbox; simple presets without options may be included from an option block.
+- Keep bundle-only combinations modular in the toolbox so the user can combine controls with an OSD, UART, or LED module without applying unrelated settings.
 - Do not add `save` commands. Betaflight Configurator applies the snippet and the user chooses when to save.
 - Avoid `defaults` and broad reset commands unless the preset explicitly promises a reset and explains its scope.
 

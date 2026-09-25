@@ -1,0 +1,283 @@
+#$ TITLE: KidCe Preset Toolbox
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: kidce, toolbox, modes, rates, osd, analog, hdzero, elrs, uart, leds, tinywhoop
+#$ AUTHOR: KidCe
+#$ DESCRIPTION: One favorite entry for optional KidCe setup modules. Select only the checkboxes you need; the controls module includes the three Actual rate profiles. Telemetry output is enabled whenever this toolbox is applied. Hardware-specific choices are grouped so you can leave unused modules unchecked.
+#$ WARNING: Review the description and verify receiver/UART wiring before saving. Choose at most one OSD layout, one UART per receiver/VTX, and one LED layout. Do not select the same UART for ELRS and HDZero. Analog OSD and HDZero MSP OSD cannot be used together. 2026.6 visibility is included for convenience; every module has not been tested on every firmware/hardware combination.
+
+feature TELEMETRY
+
+#$ OPTION BEGIN (UNCHECKED): KidCe controls: switches, rates and adjustment range
+    #$ INCLUDE: presets/kidce/KidCe_Switches_Rates_and_Adjustment_Range.txt
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) OSD layout (leave unchecked to preserve current layout)
+    #$ OPTION BEGIN (UNCHECKED): Analog MAX7456 OSD
+        #$ INCLUDE: presets/kidce/KidCe_Analog_OSD.txt
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race OSD layout
+        #$ INCLUDE: presets/kidce/KidCe_Hdzero_Race_OSD.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) ELRS serial receiver (select one wired UART)
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 1
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 0 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 2
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 3
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 4
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 5
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 6
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 7
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): ELRS receiver on UART 8
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+        serial 7 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) HDZero MSP/DisplayPort VTX UART (select one wired UART)
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 1
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 0 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 2
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 1 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 3
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 2 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 4
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 3 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 5
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 4 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 6
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 5 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 7
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 6 131073 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero VTX on UART 8
+        set vcd_video_system = HD
+        set osd_displayport_device = MSP
+        serial 7 131073 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) LED layout (choose one physical layout or leave unchecked)
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race LED layout - 2 LEDs
+        feature LED_STRIP
+        set ledstrip_profile = RACE
+        set ledstrip_race_color = BLACK
+        set ledstrip_brightness = 100
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 75
+        led 0 2,3::COV:1
+        led 1 3,3::COV:1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race LED layout - 4 LEDs
+        feature LED_STRIP
+        set ledstrip_profile = RACE
+        set ledstrip_race_color = BLACK
+        set ledstrip_brightness = 100
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 75
+        led 0 2,3::COV:1
+        led 1 3,3::COV:1
+        led 2 4,3::COV:1
+        led 3 5,3::COV:1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race LED layout - 8 LEDs
+        feature LED_STRIP
+        set ledstrip_profile = RACE
+        set ledstrip_race_color = BLACK
+        set ledstrip_brightness = 100
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 75
+        led 0 2,3::COV:1
+        led 1 3,3::COV:1
+        led 2 4,3::COV:1
+        led 3 5,3::COV:1
+        led 4 6,3::COV:1
+        led 5 7,3::COV:1
+        led 6 8,3::COV:1
+        led 7 7,5::COV:1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race LED layout - 16 LEDs
+        feature LED_STRIP
+        set ledstrip_profile = RACE
+        set ledstrip_race_color = BLACK
+        set ledstrip_brightness = 100
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 75
+        led 0 2,3::COV:1
+        led 1 3,3::COV:1
+        led 2 4,3::COV:1
+        led 3 5,3::COV:1
+        led 4 6,3::COV:1
+        led 5 7,3::COV:1
+        led 6 8,3::COV:1
+        led 7 7,5::COV:1
+        led 8 8,6::COV:1
+        led 9 9,7::COV:1
+        led 10 10,8::COV:1
+        led 11 11,9::COV:1
+        led 12 12,10::COV:1
+        led 13 13,11::COV:1
+        led 14 14,12::COV:1
+        led 15 15,13::COV:1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): HDZero Race LED layout - 32 LEDs
+        feature LED_STRIP
+        set ledstrip_profile = RACE
+        set ledstrip_race_color = BLACK
+        set ledstrip_brightness = 100
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 75
+        led 0 0,0::CY:0
+        led 1 1,0::CY:0
+        led 2 2,0::CY:0
+        led 3 3,0::CY:0
+        led 4 4,0::CY:0
+        led 5 5,0::CY:0
+        led 6 6,0::CY:0
+        led 7 7,0::CY:0
+        led 8 8,0::CY:0
+        led 9 9,0::CY:0
+        led 10 10,0::CY:0
+        led 11 11,0::CY:0
+        led 12 12,0::CY:0
+        led 13 13,0::CY:0
+        led 14 14,0::CY:0
+        led 15 15,0::CY:0
+        led 16 0,1::CY:0
+        led 17 1,1::CY:0
+        led 18 2,1::CY:0
+        led 19 3,1::CY:0
+        led 20 4,1::CY:0
+        led 21 5,1::CY:0
+        led 22 6,1::CY:0
+        led 23 7,1::CY:0
+        led 24 8,1::CY:0
+        led 25 9,1::CY:0
+        led 26 10,1::CY:0
+        led 27 11,1::CY:0
+        led 28 12,1::CY:0
+        led 29 13,1::CY:0
+        led 30 14,1::CY:0
+        led 31 15,1::CY:0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): TinyWhoop 13 LED layout
+        feature LED_STRIP
+        set ledstrip_brightness = 30
+        set ledstrip_rainbow_delta = 10
+        set ledstrip_rainbow_freq = 77
+        led 0 2,9::CY:0
+        led 1 3,9::CY:0
+        led 2 4,9::CY:0
+        led 3 5,9::CY:0
+        led 4 6,9::CY:0
+        led 5 7,9::CY:0
+        led 6 8,9::CY:0
+        led 7 9,9::CY:0
+        led 8 10,9::CY:0
+        led 9 11,9::CY:0
+        led 10 12,9::CY:0
+        led 11 13,9::CY:0
+        led 12 14,9::CY:0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Optional LED brightness override
+    #$ OPTION BEGIN (UNCHECKED): LED brightness 100 percent
+        set ledstrip_brightness = 100
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): LED brightness 40 percent
+        set ledstrip_brightness = 40
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Optional LED profile override
+    #$ OPTION BEGIN (UNCHECKED): Race LED profile
+        set ledstrip_profile = RACE
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Status LED profile
+        set ledstrip_profile = STATUS
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Optional ELRS receiver smoothing (use only with serial ELRS)
+    #$ OPTION BEGIN (UNCHECKED): Stored baseline RC smoothing values
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 45
+        set feedforward_jitter_factor = 6
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Racing RC smoothing values
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 35
+        set feedforward_jitter_factor = 4
+        set feedforward_boost = 18
+        set rc_smoothing_auto_factor = 25
+        set rc_smoothing_auto_factor_throttle = 25
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS cell-voltage reporting
+    set report_cell_voltage = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): TinyWhoop beeper behavior and battery voltage alerts
+    beacon RX_LOST
+    beacon RX_SET
+    battery_profile 0
+    set vbat_max_cell_voltage = 440
+    set vbat_warning_cell_voltage = 345
+    battery_profile 0
+#$ OPTION END

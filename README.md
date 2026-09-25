@@ -74,6 +74,8 @@ KidCe's personal presets are stored together in [`presets/kidce/`](presets/kidce
 
 The telemetry feature is enabled by every KidCe preset. Receiver protocol, UART routing, and receiver support still vary by craft; follow the warning shown on each preset and verify the Receiver and Ports tabs before saving.
 
+For one favorite entry with selectable modules, use the [KidCe Preset Toolbox](presets/kidce/KidCe_Preset_Toolbox.txt). Its hardware-dependent OSD, UART, and LED choices are presented as options; keep it synchronized with the standalone presets.
+
 ## Creating new presets
 
 **Submissions for new presets** must be made with a GitHub [Firmware Preset Pull Request](https://github.com/betaflight/firmware-presets/pulls) (PR):
