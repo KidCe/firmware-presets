@@ -1,51 +1,42 @@
-#$ TITLE: VTX & RX UART Selection
+#$ TITLE: Kitsi HDZero MSP DisplayPort and UART
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ FIRMWARE_VERSION: 2025.12
-#$ CATEGORY: OSD
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: VTX
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: uart, vtx, rx, osd, betaflight, serial
-#$ AUTHOR: Community
+#$ KEYWORDS: kitsi, hdzero, msp, displayport, vtx, uart
+#$ AUTHOR: Kitsi
+#$ DESCRIPTION: Enables HD video-system and MSP DisplayPort settings, then lets you choose one UART for HDZero VTX control. FC telemetry output is enabled; choose a receiver protocol and UART that support it separately.
+#$ WARNING: Select exactly one UART that is physically connected to the HDZero VTX. Check Ports tab and do not assign the same UART to another function.
 
-# Set video system and OSD interface
+feature TELEMETRY
 set vcd_video_system = HD
 set osd_displayport_device = MSP
 
-#$ OPTION_GROUP BEGIN: Select UART for VTX
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) HDZero VTX UART (select exactly one)
     #$ OPTION BEGIN (UNCHECKED): UART 1
-        # Use UART1 for VTX
         serial 0 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 2
-        # Use UART2 for VTX
         serial 1 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 3
         serial 2 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 4
         serial 3 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 5
         serial 4 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 6
         serial 5 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 7
         serial 6 131073 115200 57600 0 115200
     #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): UART 8
         serial 7 131073 115200 57600 0 115200
     #$ OPTION END
 #$ OPTION_GROUP END
-
-
-

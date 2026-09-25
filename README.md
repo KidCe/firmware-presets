@@ -2,10 +2,15 @@
 
 A simple way to configure your Betaflight Flight Controller Firmware settings.
 
+## AI assistance disclosure
+
+This repository includes personal presets created with substantial assistance from OpenAI Codex. The maintainer directed the work and is responsible for reviewing and using the presets.
+
 - [Introduction](#introduction)
 - [Applying and using Presets](#applying-and-using-presets)
 - [Providing feedback](#providing-feedback)
 - [Custom sources](#custom-sources)
+- [Kitsi personal presets](#kitsi-personal-presets)
 - [Creating new presets](#creating-new-presets)
 - [Tips for preset authors](#tips-for-authors)
 - [Modifying existing presets](#modifying-existing-presets)
@@ -62,6 +67,12 @@ Any end-user can then apply your custom presets.
 Unless you rebase to master to ensure that this branch is up to date with Betaflight, any existing Presets may become out of date.  
 
 You may choose to remove all the other Presets, leaving only those you have made, and you may replace or remove the directory structure.  You must re-build the index file and push it to Github after file or directory changes.  
+
+## Kitsi personal presets
+
+Kitsi's personal presets are stored together in [`presets/kitsi/`](presets/kitsi/). Their metadata controls the Configurator category and firmware-version visibility. Read [`AGENTS.md`](AGENTS.md) before adding or changing one, then run `npm run verify` and `npm run index` and commit the updated `index.json` and `index_hash.txt` with the preset files.
+
+The telemetry feature is enabled by every Kitsi preset. Receiver protocol, UART routing, and receiver support still vary by craft; follow the warning shown on each preset and verify the Receiver and Ports tabs before saving.
 
 ## Creating new presets
 
@@ -312,4 +323,3 @@ Note 2: If an included Preset has options, those options will not be shown to th
 ## Credits
 
 The Preset system was developed by @limonspb for Betaflight 4.3.
-

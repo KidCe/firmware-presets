@@ -1,0 +1,62 @@
+#$ TITLE: Kitsi ELRS Serial Receiver and UART
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
+#$ FIRMWARE_VERSION: 2026.6
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: kitsi, elrs, crsf, serial receiver, uart, telemetry
+#$ AUTHOR: Kitsi
+#$ DESCRIPTION: Configures a separate serial ELRS/CRSF receiver, enables FC telemetry output, and lets you select one receiver UART. Optional RC smoothing profiles and cell-voltage telemetry are provided below.
+#$ WARNING: For a separate serial receiver, not an SPI-integrated ELRS receiver. Select exactly the UART wired to the receiver's TX/RX pads. UART availability and wiring are flight-controller-specific; verify the Ports and Receiver tabs after applying.
+
+feature TELEMETRY
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) ELRS receiver UART (select exactly one)
+    #$ OPTION BEGIN (UNCHECKED): UART 1
+        serial 0 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 2
+        serial 1 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 3
+        serial 2 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 4
+        serial 3 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 5
+        serial 4 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 6
+        serial 5 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 7
+        serial 6 64 115200 57600 0 115200
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): UART 8
+        serial 7 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Optional RC smoothing profile
+    #$ OPTION BEGIN (UNCHECKED): Stored baseline RC smoothing values
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 45
+        set feedforward_jitter_factor = 6
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Racing fine-tuning
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 35
+        set feedforward_jitter_factor = 4
+        set feedforward_boost = 18
+        set rc_smoothing_auto_factor = 25
+        set rc_smoothing_auto_factor_throttle = 25
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION BEGIN (UNCHECKED): Report cell voltage to the receiver
+    set report_cell_voltage = ON
+#$ OPTION END

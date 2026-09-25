@@ -135,6 +135,7 @@
   "uniqueValues": {
     "firmware_version": [
       "2025.12",
+      "2026.6",
       "3.5",
       "4.2",
       "4.3",
@@ -168,7 +169,6 @@
       "Botgrinder",
       "CADDXFPV",
       "Chris Rosser",
-      "Community",
       "ctzsnooze",
       "ctzsnooze, SupaflyFPV",
       "Daniel Appel / Tehllama",
@@ -191,7 +191,7 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
-      "KidCe",
+      "Kitsi",
       "KMfpv",
       "LeadFingers",
       "MinChan Kim",
@@ -206,6 +206,7 @@
       "Stingers Swarm",
       "Sugar K",
       "sugarK",
+      "sugarK, adapted by Kitsi",
       "SupaflyFPV",
       "UAV Tech (Mark Spatz)",
       "Utka v tapkah",
@@ -292,6 +293,7 @@
       "acro",
       "Acrobaix",
       "actual",
+      "adjustment range",
       "adjustments",
       "aio",
       "aio5",
@@ -326,6 +328,7 @@
       "bnf",
       "botgrinder",
       "brushless",
+      "bundle",
       "Caddx",
       "camera",
       "camera_control",
@@ -435,12 +438,13 @@
       "JWebb",
       "karate",
       "KarateBrot",
-      "kidce",
       "kim",
+      "kitsi",
       "launch",
       "launch_mode",
       "LeadFingers",
       "League",
+      "led strip",
       "leds",
       "limon",
       "link",
@@ -453,6 +457,7 @@
       "lr5",
       "mamba",
       "Marek",
+      "max7456",
       "mck",
       "meteor",
       "MGP",
@@ -499,6 +504,7 @@
       "PIDtoolbox",
       "pro32",
       "profile",
+      "profiles",
       "Protos",
       "Pure Race",
       "quaddiction",
@@ -541,7 +547,7 @@
       "sbus",
       "SBUS fast",
       "secretfader",
-      "serial",
+      "serial receiver",
       "settek",
       "Sh*t pilot",
       "shames",
@@ -571,6 +577,7 @@
       "Supafly",
       "SupaflyFPV",
       "switch",
+      "switches",
       "SWPR",
       "T3",
       "tank solo",
@@ -579,12 +586,14 @@
       "TBS Core",
       "tbs sa",
       "Team Black Sheep",
+      "telemetry",
       "Texas",
       "thicc",
       "tiny",
       "tiny tank",
       "TinyApe",
       "TinyTrainer",
+      "tinywhoop",
       "toothpic",
       "toothpick",
       "Tracer",
@@ -8164,139 +8173,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/KidCe_hdzero_osd.txt",
-      "hash": "4dca36ceca306934bb28ca27c192f6fe547806377baad3a41f97037775c7612e",
-      "title": "KidCe HD Race OSD",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/KidCe_IncludeAll.txt",
-      "hash": "cb4929b99b1a4a8ce3e1c8283b94c0981bf15c1757a07c86cb5a5f67a582ec15",
-      "title": "KidCe AIO",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/KidCe_LED_setup.txt",
-      "hash": "c79d63952259e1d02364e14420dd4871745e605393b39de01113667d3283a760",
-      "title": "KidCe LED Setup",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "LEDS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "leds",
-        "race",
-        "vtx",
-        "colour change",
-        "sugarK",
-        "spec",
-        "spec racing",
-        "tinytrainer"
-      ],
-      "author": "sugarK",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/kidce_rx.txt",
-      "hash": "71eeea2ad2771de81846ef80723135ac72f380b29b50d5e690c9b4785871eb01",
-      "title": "KidCe ELRS 250hz + port select",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "uart",
-        "vtx",
-        "rx",
-        "osd",
-        "betaflight",
-        "serial",
-        "kidce"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/KidCe_switches.txt",
-      "hash": "c33f414bfcd08a8a4a50658b978f53c17f4ec68cecfb155ea5869ab92d490af9",
-      "title": "KidCe switches & rate profiles",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "hdzero",
-        "HD",
-        "HDOSD",
-        "OSD",
-        "kidce",
-        "racing"
-      ],
-      "author": "KidCe",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/other/kidce_vtx_rx.txt",
-      "hash": "6609da7c51dba1726e964a2f88f2622d201e60639e37fefad4cc9e94dcb2ebd9",
-      "title": "VTX & RX UART Selection",
-      "firmware_version": [
-        "4.4",
-        "4.5",
-        "2025.12"
-      ],
-      "category": "OSD",
-      "status": "COMMUNITY",
-      "keywords": [
-        "uart",
-        "vtx",
-        "rx",
-        "osd",
-        "betaflight",
-        "serial"
-      ],
-      "author": "Community",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/other/multigp_pro_spec.txt",
       "hash": "a340e77d4555317ce3c14ecda94583abdf6b074a176a09cd9abfd24e7d0287e2",
       "title": "MultiGP PRO Spec 7\"",
@@ -9950,6 +9826,208 @@
       "author": "sugarK",
       "force_options_review": true,
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_Analog_OSD.txt",
+      "hash": "e38eda44fafce0f80f6a7f1ee3a6197d717a56d829d2b350234e917b148cf0a1",
+      "title": "Kitsi Analog OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "analog",
+        "osd",
+        "max7456",
+        "whoop"
+      ],
+      "author": "Kitsi",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_ELRS_Receiver_UART.txt",
+      "hash": "985689ad2f7056f378ef5ad5d8e9b5b8eddc50ff12bbf664b523a54cb24eb5f5",
+      "title": "Kitsi ELRS Serial Receiver and UART",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "elrs",
+        "crsf",
+        "serial receiver",
+        "uart",
+        "telemetry"
+      ],
+      "author": "Kitsi",
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_Hdzero_Bundle.txt",
+      "hash": "8a6db2e24493f906b04ebeffddca5881dc0c5b47fc44c940063b3410796946d5",
+      "title": "Kitsi HDZero OSD and Controls Bundle",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "hdzero",
+        "osd",
+        "rates",
+        "switches",
+        "bundle"
+      ],
+      "author": "Kitsi",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_Hdzero_MSP_UART.txt",
+      "hash": "4876c3e964950d58ce4e2b94b389e6f3dbd73814fd7984ce15d2ae0eca3b0cbd",
+      "title": "Kitsi HDZero MSP DisplayPort and UART",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "hdzero",
+        "msp",
+        "displayport",
+        "vtx",
+        "uart"
+      ],
+      "author": "Kitsi",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_Hdzero_Race_OSD.txt",
+      "hash": "43a183d935c820260b3fa265e4f5c8c86050501064b47424c68f4dc65fafdd7a",
+      "title": "Kitsi HDZero Race OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "hdzero",
+        "digital",
+        "osd",
+        "racing"
+      ],
+      "author": "Kitsi",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_LED_Setup.txt",
+      "hash": "35f6d59820920b94bbbf44e6c7dc3ad6e2ebefa99b012a673bd4536d551c96fd",
+      "title": "Kitsi LED Setup for HDZero Race VTX",
+      "firmware_version": [
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "LEDS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "leds",
+        "led strip",
+        "hdzero",
+        "race",
+        "vtx",
+        "tinytrainer"
+      ],
+      "author": "sugarK, adapted by Kitsi",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_Switches_and_Adjustments.txt",
+      "hash": "41bf1cfd1141dfe77aa5bfeccc85dcb10e4c1dae6a6cd04751a5cfb921932f2a",
+      "title": "Kitsi Switches and Adjustment Range",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "aux",
+        "switches",
+        "modes",
+        "adjustment range",
+        "tinywhoop"
+      ],
+      "author": "Kitsi",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_TinyWhoop_Rates.txt",
+      "hash": "cf2eb3a4d7605809c2c2e4ff579e67667d59d994b164112f7830609a387bdf7d",
+      "title": "Kitsi TinyWhoop Rates",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "rates",
+        "tinywhoop",
+        "profiles"
+      ],
+      "author": "Kitsi",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/kitsi/Kitsi_TinyWhoop_Settings.txt",
+      "hash": "790b32bec7e0dfd39310913ff035476cda54489a7fa778267803c1ee6ef574cd",
+      "title": "Kitsi TinyWhoop Flight Setup (No OSD, PID, or Filters)",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "2025.12",
+        "2026.6"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "kitsi",
+        "tinywhoop",
+        "whoop",
+        "rates",
+        "leds",
+        "switches",
+        "telemetry"
+      ],
+      "author": "Kitsi",
+      "priority": 0
     }
   ]
 }
