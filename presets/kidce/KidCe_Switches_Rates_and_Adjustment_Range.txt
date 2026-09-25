@@ -7,8 +7,8 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: kidce, rates, rate profiles, switches, aux, modes, adjustment range, beeper, flip over after crash
 #$ AUTHOR: KidCe
-#$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, three rate profiles, and pilot name. Intended as the common control setup across craft, including TinyWhoops. Enables FC telemetry output; receiver protocol and UART routing must support it.
-#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100.
+#$ DESCRIPTION: Applies KidCe's general-purpose switch assignments, adjustment range, the Cinematic, Freestyle, and Race Actual-rate profiles, and pilot name. Intended as the common control setup across craft. Enables FC telemetry output; receiver protocol and UART routing must support it.
+#$ WARNING: Verify AUX channel mapping and switch positions for the receiver before saving. Beeper uses AUX6 from 1600 to 2000; Flip Over After Crash is assigned once to AUX3 from 1600 to 2100. Betaflight profile names allow up to 8 characters, so Cinematic is stored as Cinemati.
 
 feature TELEMETRY
 
@@ -27,47 +27,57 @@ adjrange 0 0 1 900 2100 12 1 0 0
 
 set pilot_name = KIDCE
 
-# Rate profile 0
+# Rate profile 0: Cinematic (Betaflight allows up to 8 characters in the profile name)
 rateprofile 0
-set rateprofile_name = 670
-set thr_mid = 28
-set thr_expo = 35
-set thr_hover = 22
+set rateprofile_name = Cinemati
+set rates_type = ACTUAL
+set thr_mid = 50
+set thr_expo = 0
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rc_rate = 5
+set pitch_rc_rate = 5
+set yaw_rc_rate = 5
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 50
+set pitch_srate = 40
+set yaw_srate = 35
+
+# Rate profile 1: Freestyle
+rateprofile 1
+set rateprofile_name = Freestyle
+set rates_type = ACTUAL
+set thr_mid = 50
+set thr_expo = 0
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
 set roll_rc_rate = 17
 set pitch_rc_rate = 14
 set yaw_rc_rate = 14
-set roll_expo = 50
-set pitch_expo = 50
-set yaw_expo = 50
-set roll_srate = 67
-set pitch_srate = 53
-set yaw_srate = 53
-set throttle_limit_percent = 65
+set roll_expo = 57
+set pitch_expo = 57
+set yaw_expo = 20
+set roll_srate = 92
+set pitch_srate = 92
+set yaw_srate = 67
 
-# Rate profile 1
-rateprofile 1
-set rateprofile_name = brrrd
-set roll_rc_rate = 14
+# Rate profile 2: Race
+rateprofile 2
+set rateprofile_name = Race
+set rates_type = ACTUAL
+set thr_mid = 50
+set thr_expo = 0
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rc_rate = 17
 set pitch_rc_rate = 14
 set yaw_rc_rate = 14
-set roll_expo = 10
-set pitch_expo = 10
-set yaw_expo = 10
-set roll_srate = 120
-set pitch_srate = 120
-set yaw_srate = 120
-
-# Rate profile 2
-rateprofile 2
-set rateprofile_name = bajo
-set roll_rc_rate = 25
-set pitch_rc_rate = 20
-set yaw_rc_rate = 20
-set roll_expo = 45
-set pitch_expo = 50
-set yaw_expo = 62
-set roll_srate = 80
-set pitch_srate = 80
-set yaw_srate = 80
-
+set roll_expo = 40
+set pitch_expo = 25
+set yaw_expo = 15
+set roll_srate = 67
+set pitch_srate = 53
+set yaw_srate = 33
 rateprofile 0
